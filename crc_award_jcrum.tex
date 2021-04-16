@@ -1,0 +1,98 @@
+% Created 2021-04-16 Fri 10:39
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[version=3]{mhchem}
+\usepackage[numbers,super,sort&compress]{natbib}
+\usepackage{natmove}
+\usepackage{url}
+\usepackage{minted}
+\usepackage{underscore}
+\usepackage[linktocpage,pdfstartview=FitH,colorlinks,
+linkcolor=blue,anchorcolor=blue,
+citecolor=blue,filecolor=blue,menucolor=blue,urlcolor=blue]{hyperref}
+\usepackage{attachfile}
+\usepackage{geometry}
+\geometry{margin=1.0in}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[numbers,super,sort&compress]{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{font=footnotesize}
+\usepackage[version=3]{mhchem}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{mdwlist}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\usepackage{wrapfig}
+\usepackage{nopageno}
+\fancyhf{}
+\fancyhead[LE,RO]{\scriptsize Jerry Crum}
+\fancyhead[RE,LO]{\scriptsize CRC Award}
+%\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+%\usepackage{subfig}
+\usepackage{comment}
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{0.6\baselineskip}{0.2\baselineskip}
+\titlespacing*{\subsection}
+{0pt}{0.6\baselineskip}{0.2\baselineskip}
+\titlespacing*{\subsubsection}
+{0pt}{0.4\baselineskip}{0.1\baselineskip}
+\usepackage{parskip}
+\usepackage[section]{placeins}
+\usepackage{siunitx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\usepackage[capitalise]{cleveref}
+\author{Jerry Crum}
+\date{}
+\title{CRC Award for Computational Sciences and Visualization: Summary of Work}
+\begin{document}
+
+\begin{OPTIONS}
+\def\udesoftecoverride\#1\mainmatter\{\%
+  \AfterEndPreamble{#1\mainmatter}
+\end{OPTIONS}
+
+\maketitle
+\Sectionnumbersoff
+
+My research involves the use of theory and simulation to study Br\o nsted acidic zeolites at the atomic level. In particular I am interested in characterizing catalytic sites in these zeolites using density functional theory (DFT) and graph theory to correlate topological descriptors with chemical properties. I work closely with experimental researchers to design experiments that provide a means to validate the insights gained from my simulations. While there are many practical applications for this work, my focus currently is to design zeolites with optimal active site proximity for propene oligomerization. I have developed the Zeolite Simulation Environment (ZSE), a Python package, to automate zeolite structure generation and characterization making this research systematic and simple. This tool can aid any computational researcher studying zeolites. 
+
+Currently ZSE has 8 modules with various functions such as: a database of zeolite structures, Al placement in the zeolite framework, enumerating proton configurations, placing other charge compensating cations, finding the rings associated with a tetrahedral site (T-site), oxygen atom, or entire zeolite framework, finding all the unique T-site pairs that share a ring in a framework, and CIF tools to load hypothetical zeolite frameworks not listed on the IZA website. 
+
+ZSE is built around the Atomic Simulation Environment (ASE) atoms object. \cite{ase-ask} I wrote a web scraper to collect all the structures and relative information for every zeolite framework listed on the International Zeolite Associate (IZA) website. \cite{baerlocher}  These structures are stored in a database included with ZSE, and makes loading any structure possible with one line of code. Also included is a tool that can read CIF files for structures not included on the IZA. This returns an atoms object along with the same information that would typically be provided by the IZA. 
+
+All of the structure generation functions in ZSE have the ability to enumerate possible configurations, and save the structures in the POSCAR format. This makes preparation for DFT calculations automatic and easy. Since ZSE is built on ASE, all the structures are able to be visualized by the ASE GUI. 
+
+The topology of zeolites and of associated T-sites are commonly characterized by their associated rings. A ring is a close cycle traversing the T-site and oxygen atoms in the framework. Numerous definitions and algorithms for finding zeolite rings have been proposed and applied throughout the literature. I have implemented a number of common and new ring finding definitions in ZSE, providing a simple method for comparing results between them. 
+
+I have used ZSE in a recently published paper on the study of the infrared and catalytic consequence of active site proximity in the Chabazite framework. \cite{kester-2021-effec-broen} ZSE is used by other members of the Schneider group, researchers at multiple universities, and employees at Exxon Mobil. I plan to continue development of ZSE, adding new features to aid the community of computational zeolite scientists. 
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\end{document}

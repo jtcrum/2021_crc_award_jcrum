@@ -1,0 +1,33 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Larsen et~al.(2017)Larsen, Mortensen, Blomqvist, Castelli,
+  Christensen, Dułak, Friis, Groves, Hammer, and Hargus]{ase-ask}
+Larsen, A.~H., Mortensen, J.~J., Blomqvist, J., Castelli, I.~E., Christensen,
+  R., Dułak, M., Friis, J., Groves, M.~N., Hammer, B., and Hargus, C.
+\newblock The atomic simulation environment-a python library for working with
+  atoms.
+\newblock \emph{Journal of Physics: Condensed Matter}, 29:\penalty0 273002,
+  2017.
+\newblock \doi{10.1088/1361-648X/aa680e}.
+\newblock URL \url{https://doi.org/10.1088/1361-648X/aa680e}.
+
+\bibitem[Baerlocher and McCusker()]{baerlocher}
+Baerlocher, C. and McCusker, L.
+\newblock Database of {Zeolite} {Structures}.
+\newblock URL \url{http://www.iza-structure.org/databases/}.
+
+\bibitem[Kester et~al.(2021)Kester, Crum, Li, Schneider, and
+  Gounder]{kester-2021-effec-broen}
+Kester, P.~M., Crum, J.~T., Li, S., Schneider, W.~F., and Gounder, R.
+\newblock Effects of br{\o}nsted acid site proximity in chabazite zeolites on
+  {OH} infrared spectra and protolytic propane cracking kinetics.
+\newblock \emph{Journal of Catalysis}, 395:\penalty0 210--226, 2021.
+\newblock \doi{10.1016/j.jcat.2020.12.038}.
+\newblock URL \url{https://doi.org/10.1016/j.jcat.2020.12.038}.
+
+\end{thebibliography}
