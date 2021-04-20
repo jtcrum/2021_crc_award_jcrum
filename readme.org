@@ -56,14 +56,9 @@
 
 ** Jerry Crum
 
-** Summary of Work
+* Navigation:
+[[./crc_award_jcrum.pdf][Summary of work]]
 
-My research involves the use of theory and simulation to study Br\o nsted acidic zeolites at the atomic level. Zeolites are microporous networks of Si and O atoms used for shape selective catalysis, separations, and as adsorbents. In particular I am interested in characterizing catalytic sites in these zeolites using density functional theory (DFT) and graph theory to correlate topological descriptors with chemical properties. I work closely with experimental researchers to design experiments that provide a means to validate the insights gained from my simulations. While there are many practical applications for this work, my focus currently is to design zeolites with optimal active site proximity for propene oligomerization. I have developed the Zeolite Simulation Environment (ZSE), a Python package, to automate zeolite structure generation and characterization making this research systematic and simple. This tool can aid any computational researcher studying zeolites. 
+[[./CV_Crum_Jerry.pdf][Jerry's CV]]
 
-Currently ZSE has 8 modules with various functions such as: a database of zeolite structures, Al placement in the zeolite framework, enumerating proton configurations, placing other charge compensating cations, finding the rings associated with a tetrahedral site (T-site), oxygen atom, or entire zeolite framework, finding all the unique T-site pairs that share a ring in a framework, and CIF tools to load hypothetical zeolite frameworks not included in the database. 
-
-ZSE is built around the Atomic Simulation Environment (ASE) atoms object. I wrote a web scraper to collect all the structures and relative information for every zeolite framework listed on the International Zeolite Associate (IZA) website. These structures are stored in a database included with ZSE, this makes loading any structure possible with one line of code. Also included is a tool that can read CIF files for structures not included on the IZA. This returns an atoms object along with the same information that would typically be provided by the IZA. 
-
-All of the structure generation functions in ZSE have the ability to enumerate possible configurations, and save the structures in the POSCAR format. This makes preparation for DFT calculations automatic and easy. Since ZSE is built on ASE, all the structures are able to be visualized by the ASE GUI. The topology of zeolites and of associated T-sites are commonly characterized by their associated rings. A ring is a closed cycle traversing the T-site and oxygen atoms in the framework. Numerous definitions and algorithms for finding zeolite rings have been proposed and applied throughout the literature. I have implemented a number of common and new ring finding algorithms in ZSE, providing a simple method for comparing results between them. 
-
-I have used ZSE in a recently published paper to generate structures that identify the infrared and catalytic consequence of active site proximity in the Chabazite framework. ZSE is used by other members of the Schneider group, researchers at multiple universities, and employees at Exxon Mobil. Tools in ZSE were used to find discrepancies in data on the IZA website. They have updated the website based on my findings, and have credited me for the changes. I plan to continue development of ZSE, adding new features to aid the community of computational zeolite scientists. For more information on ZSE, please visit https://github.com/jtcrum/zse.
+[[https://github.com/jtcrum/zse][Zeolite Simulation Environment]]
