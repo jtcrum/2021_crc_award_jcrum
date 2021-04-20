@@ -52,7 +52,7 @@
 #+OPTIONS: ':t
 #+END_OPTIONS
 
-* CRC Award for Computational Sciences and Visualization: Summary of Work
+* CRC Award for Computational Sciences and Visualization
 
 ** Jerry Crum
 
