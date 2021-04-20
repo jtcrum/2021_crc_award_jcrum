@@ -52,12 +52,11 @@
 #+OPTIONS: ':t
 #+END_OPTIONS
 
-#+Title:CRC Award for Computational Sciences and Visualization: Summary of Work
+* CRC Award for Computational Sciences and Visualization: Summary of Work
 
-#+author:Jerry Crum
+** Jerry Crum
 
-\maketitle
-\Sectionnumbersoff
+** Summary of Work
 
 My research involves the use of theory and simulation to study Br\o nsted acidic zeolites at the atomic level. Zeolites are microporous networks of Si and O atoms used for shape selective catalysis, separations, and as adsorbents. In particular I am interested in characterizing catalytic sites in these zeolites using density functional theory (DFT) and graph theory to correlate topological descriptors with chemical properties. I work closely with experimental researchers to design experiments that provide a means to validate the insights gained from my simulations. While there are many practical applications for this work, my focus currently is to design zeolites with optimal active site proximity for propene oligomerization. I have developed the Zeolite Simulation Environment (ZSE), a Python package, to automate zeolite structure generation and characterization making this research systematic and simple. This tool can aid any computational researcher studying zeolites. 
 
